@@ -1,0 +1,76 @@
+.inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+#header{
+    height: 700px;
+    background: #1f2e35;
+}
+#header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    background: #0047BA;
+}
+#header .navbar > h1{
+    font-size: 0;
+    text-indent: -99999999px;
+    line-height: 42px;
+}
+#header .navbar > h1 > a{
+    display: block;
+    background: url(../img/gnb_logo.png) no-repeat center 0px;
+    width: 264px;
+    height: 48px;
+}
+#header .navbar .gnb{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#header .navbar .gnb a{
+    color:#ffffff;
+    display: inline-block;
+    padding: 14px 22px;
+}
+.community_box{
+    position: relative;
+    top: 409px;
+    left: 248px;
+}
+.cm_box1{
+    width: 331px;
+    height: 166px;
+    border-radius: 20px;
+    background: url(../img/community_pretzel.jpg);
+    margin-right: 15px;
+}
+.cm_box2{
+    width: 331px;
+    height: 166px;
+    border-radius: 20px;
+    background: url(../img/community_store.jpg);
+    margin-right: 15px;
+}
+.cm_box3{
+    width: 331px;
+    height: 166px;
+    border-radius: 20px;
+    background: url(../img/community_delivery.jpg);
+}
+
+#content{}
+#content>section{
+    margin-top:112px;
+}
+
+.menu_img img{
+    width: 244px;
+    height: 244px;
+}
+.menu_box{
+    text-align: center;
+}
