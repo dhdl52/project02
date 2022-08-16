@@ -7,13 +7,16 @@
     height: 700px;
     background: #1f2e35;
 }
+#header .nav{
+    background: #0047BA;
+    height: 125px;
+}
 #header .navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 125px;
-    background: #0047BA;
 }
 #header .navbar > h1{
     font-size: 0;
@@ -35,11 +38,6 @@
     color:#ffffff;
     display: inline-block;
     padding: 14px 22px;
-}
-.community_box{
-    position: relative;
-    top: 409px;
-    left: 248px;
 }
 .cm_box1{
     width: 331px;
@@ -73,4 +71,30 @@
 }
 .menu_box{
     text-align: center;
+}
+.story_box{
+    margin: auto;
+}
+.story_box_left{
+    margin-right: 15px;
+}
+.story_box_left img{
+    width: 418px;
+    height: 387px;
+}
+.story_box_right img{
+    width: 417px;
+    height: 189px;
+}
+#footer .footr_wrap{
+    height: 255px;
+    background: #0047BA;
+}
+#footer .copyright{
+    height: 21px;
+    background: #FFB300;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px 0;
+    color: #ffffff;
 }
