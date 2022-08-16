@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>앤티앤스 프레즐</title>
     <link rel="stylesheet" href="css/reset.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
@@ -22,7 +24,25 @@
                 </ul>
             </div>
         </div>
-        <div class="mainvisual"></div>
+        <div class="mainvisual">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/bg_ade.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bg_con.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bg_bread.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
     </header>
     <div id="content">
         <div class="inner">
@@ -42,7 +62,7 @@
             </div>
             <div class="menu_box">
                 <h3 class="menu_tit">Auntie Anne's Menu</h3>
-                <ul class="menu_box cf">
+                <ul class="menu_box_board cf">
                     <li class="fl">
                         <div class="menu_img">
                             <img src="img/menu_originalpretzel.png" alt="오리지널프레즐">
@@ -74,25 +94,79 @@
                 </ul>
             </div>
             <div class="story_box cf">
-                <div class="story_box_left fl">
-                    <img src="img/franchise.jpg" alt="가맹상담">
-                </div>
-                <div class="story_box_right fl">
-                    <div class="story_box1">
-                        <img src="img/history.jpg" alt="앤티앤스역사">
-                    </div>
-                    <div class="story_box2">
-                        <img src="img/community.jpg" alt="고객소통">
-                    </div>
-                </div>
+                <ul class="story_box_left fl">
+                    <li>
+                        <img src="img/franchise.png" alt="가맹상담">
+                        <div class="caption">
+                            <p>프랜차이즈</p>
+                            <p>가맹상담</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="story_box_right fl">
+                    <li class="story_box1">
+                        <img src="img/history.png" alt="앤티앤스역사">
+                        <div class="caption">
+                            <p>앤티앤스 스토리</p>
+                        </div>
+                    </li>
+                    <li class="story_box2">
+                        <img src="img/community.png" alt="고객소통">
+                        <div class="caption">
+                            <p>고객소통방</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
     <footer id="footer">
-        <div class="footr_wrap"></div>
+        <div class="footr_wrap">
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="img/footer_logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer_info">
+                <div class="footer_info1">
+                    <p>(주)재원푸드 서울특별시 서초구 반포대로 22 (서초동 1451-34번지) 서초평화빌딩 10층</p>
+                </div>
+                <div class="footer_info2">
+                    <p>TEL. 02-587-0955</p>
+                    <p>FAX. 02-587-0956</p>
+                </div>
+            </div>
+            <div class="footer_btn">
+                <p>재원푸드 홈페이지</p>
+                <p>채용안내</p>
+            </div>
+        </div>
         <div class="copyright">
             <p>COPYRIGHT (C) 2020 AUNTIE ANNE'S KOREA, ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
